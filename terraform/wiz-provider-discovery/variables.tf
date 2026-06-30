@@ -16,9 +16,9 @@ variable "cloud_account_search" {
 }
 
 variable "cloud_providers" {
-  description = "Optional cloud provider filters, for example AWS, GCP, or Azure."
+  description = "Optional cloud provider filters. Defaults to GCP for this example."
   type        = set(string)
-  default     = ["AWS"]
+  default     = ["GCP"]
 }
 
 variable "registry_search" {
@@ -28,9 +28,9 @@ variable "registry_search" {
 }
 
 variable "registry_types" {
-  description = "Optional container registry type filters, for example ECR, GAR, GCR, ACR, GHCR, or DOCKER_HUB."
+  description = "Optional container registry type filters. Defaults to Google Artifact Registry and Google Container Registry."
   type        = set(string)
-  default     = ["ECR"]
+  default     = ["GAR", "GCR"]
 }
 
 variable "kubernetes_cluster_search" {
@@ -40,9 +40,9 @@ variable "kubernetes_cluster_search" {
 }
 
 variable "kubernetes_cluster_kinds" {
-  description = "Optional Kubernetes cluster kind filters, for example EKS, GKE, AKS, OKE, LKE, OPEN_SHIFT, ACK, or SELF_HOSTED."
+  description = "Optional Kubernetes cluster kind filters. Defaults to GKE for this example."
   type        = set(string)
-  default     = ["EKS"]
+  default     = ["GKE"]
 }
 
 variable "kubernetes_namespace_search" {

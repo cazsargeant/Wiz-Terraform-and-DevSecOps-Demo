@@ -30,11 +30,11 @@ This keeps the scan logic in one place and lets other repositories consume the s
 
 ## 3. Terraform Queries Wiz As Code
 
-The Terraform example in `terraform/wiz-provider-discovery` configures the Wiz Terraform Provider and queries Wiz-managed assets:
+The Terraform example in `terraform/wiz-provider-discovery` configures the Wiz Terraform Provider and queries GCP-oriented Wiz-managed assets:
 
 - cloud accounts
-- container registries
-- Kubernetes clusters
+- Google Artifact Registry or Google Container Registry entries
+- GKE clusters
 - Kubernetes namespaces
 
 This demonstrates how Wiz environment visibility can be expressed as Terraform configuration and reviewed like other infrastructure code.

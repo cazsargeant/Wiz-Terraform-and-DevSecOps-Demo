@@ -1,11 +1,11 @@
 wiz_environment = "prod"
 
 cloud_account_search = ["example-account"]
-cloud_providers      = ["AWS"]
+cloud_providers      = ["GCP"]
 
 registry_search = "example"
-registry_types  = ["ECR"]
+registry_types  = ["GAR", "GCR"]
 
 kubernetes_cluster_search    = "example-cluster"
-kubernetes_cluster_kinds     = ["EKS"]
+kubernetes_cluster_kinds     = ["GKE"]
 kubernetes_namespace_search  = "example-namespace"

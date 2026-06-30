@@ -9,7 +9,7 @@ This repository is intentionally generic and contains no organisation-specific e
 The demo shows two complementary ways to bring Wiz into an engineering workflow:
 
 - A reusable GitHub Actions workflow runs a Wiz IaC scan against a calling repository before infrastructure changes progress.
-- A Terraform example configures the Wiz Terraform Provider and queries Wiz-managed assets as code.
+- A GCP-oriented Terraform example configures the Wiz Terraform Provider and queries Wiz-managed assets as code.
 
 Together, these examples show how security checks and Wiz environment visibility can be expressed in repeatable DevOps workflows rather than handled manually.
 
@@ -53,11 +53,11 @@ The calling repository must define a `WIZ_API_TOKEN` secret before using the wor
 
 ## Terraform Provider Example
 
-The `terraform/wiz-provider-discovery` example shows how to configure the Wiz Terraform Provider and query existing Wiz-managed assets:
+The `terraform/wiz-provider-discovery` example shows how to configure the Wiz Terraform Provider and query existing Wiz-managed assets, using GCP-oriented defaults:
 
 - cloud accounts
-- container registries
-- Kubernetes clusters
+- container registries such as Google Artifact Registry or Google Container Registry
+- Kubernetes clusters such as GKE
 - Kubernetes namespaces
 
 Credentials are supplied with environment variables, so no secrets are stored in the repository:

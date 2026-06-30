@@ -1,12 +1,12 @@
 # Wiz Terraform Provider Discovery Example
 
-This example shows how Terraform can connect to Wiz and query existing Wiz-managed assets without storing credentials in code.
+This example shows how Terraform can connect to Wiz and query existing GCP-oriented Wiz-managed assets without storing credentials in code.
 
 It uses the Wiz Terraform Provider to read:
 
 - cloud accounts with `wiz_cloud_accounts`
-- container registries with `wiz_container_registries`
-- Kubernetes clusters with `wiz_kubernetes_clusters`
+- Google Artifact Registry or Google Container Registry entries with `wiz_container_registries`
+- GKE clusters with `wiz_kubernetes_clusters`
 - Kubernetes namespaces with `wiz_kubernetes_namespaces`
 
 ## Permissions
@@ -41,4 +41,4 @@ terraform init
 terraform plan
 ```
 
-The example values are placeholders. Replace them with search terms that match assets in the target Wiz tenant.
+The example values are placeholders. Replace them with search terms that match GCP assets in the target Wiz tenant.
