@@ -6,6 +6,9 @@ on:
       repo_url:
         required: true
         type: string
+    secrets:
+      WIZ_API_TOKEN:
+        required: true
 
 jobs:
   wiz-iac-scan:
@@ -13,7 +16,7 @@ jobs:
 
     steps:
       - name: Checkout source repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: ${{ inputs.repo_url }}
 
