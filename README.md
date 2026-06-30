@@ -1,6 +1,6 @@
-# Wiz DevSecOps Pipeline Portfolio Demo
+# Wiz DevSecOps Pipeline Demo
 
-An anonymised portfolio demo showing how Wiz Code can support a DevSecOps workflow across source control and CI/CD pipelines.
+A demo showing how Wiz Code can support a DevSecOps workflow across source control and CI/CD pipelines.
 
 This repository is part of my public CV/portfolio. It is intentionally generic and contains no organisation-specific environment details.
 
@@ -14,4 +14,4 @@ This repository is part of my public CV/portfolio. It is intentionally generic a
 
 - No production credentials or private configuration are included.
 - The repository history was created cleanly for public sharing.
-- This is a CV artefact, not a reusable product template.
+- This is a CV artefact, not a reusable product template/OSS project.
