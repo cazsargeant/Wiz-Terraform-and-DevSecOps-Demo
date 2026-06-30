@@ -9,7 +9,7 @@ An infrastructure repository calls the reusable workflow in this repository:
 ```yaml
 jobs:
   call-wiz-scan:
-    uses: cazsargeant/DEMO-Wiz-DevSecOps-Pipeline/.github/workflows/scan.yml@main
+    uses: cazsargeant/Wiz-Terraform-and-DevSecOps-Demo/.github/workflows/scan.yml@main
     with:
       repo_url: ${{ github.repository }}
     secrets:
