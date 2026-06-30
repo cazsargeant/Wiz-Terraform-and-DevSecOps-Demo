@@ -1,6 +1,6 @@
-# Wiz DevSecOps Pipeline Demo
+# Wiz Terraform and DevOps Demo
 
-An anonymised public example of my work showing how Wiz Code can support a DevSecOps workflow across source control and CI/CD pipelines.
+An anonymised public example of my work showing how Wiz Code and the Wiz Terraform Provider can support DevOps workflows across source control, CI/CD pipelines, and Terraform-managed configuration.
 
 This repository is intentionally generic and contains no organisation-specific environment details.
 
